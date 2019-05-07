@@ -18,7 +18,6 @@ public class HomePageStepDefinition extends TestBase {
 
     @Given("^User is in HomePage$")
     public void user_is_in_HomePage(){
-        Initialization();
         loginPage = new LoginPage();
         homePage = loginPage.Login();
         System.out.println("Home Page Title =" + homePage.PageTitle());
@@ -28,7 +27,6 @@ public class HomePageStepDefinition extends TestBase {
     public void user_Navigates_to_Tshirts_Page(){
         tShirtPage=homePage.Navigate_To_TShirt_Page();
         System.out.println("TShirt Page title is : " + tShirtPage.PageTitle());
-        TearDown();
     }
 
 

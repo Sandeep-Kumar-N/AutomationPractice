@@ -9,6 +9,7 @@ import org.junit.runner.RunWith;
         features = "src/main/java/features",
         glue = {"stepDefinition"},
         dryRun = false,
+        tags = {"@Sample"},
         monochrome = true,
         strict = true
         )

@@ -32,7 +32,7 @@ public class HomePage extends TestBase {
     @FindBy(xpath = "//*[@id='block_top_menu']/ul/li[2]/ul/li[3]/a[@title='Summer Dresses']")
     WebElement lnkSummerDress;
 
-    HomePage(){
+    public HomePage(){
         PageFactory.initElements(driver,this);
     }
 
